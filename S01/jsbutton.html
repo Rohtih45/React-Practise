@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createDom() {
+        var buttonDomElement = document.createElement("button");
+        buttonDomElement.innerText = "React Button";
+
+        var bodyDom = document.querySelector("body");
+
+        buttonDomElement.onclick = function () {
+          var p = document.createElement("p");
+          p.innerText = "onclick function working";
+          bodyDom.appendChild(p);
+        };
+
+        bodyDom.appendChild(buttonDomElement);
+
+        var ol = document.createElement("ol");
+        var li1 = document.createElement("li");
+        var lie = document.createElement("li");
+
+        li1.innerText = "HTML";
+        lie.innerText = "CSS";
+
+        ol.appendChild(li1);
+        ol.appendChild(lie);
+
+        bodyDom.appendChild(ol);
+      }
+      createDom();
+      createDom();
+      createDom();
+    </script>
+  </body>
+</html>

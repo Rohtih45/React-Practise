@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var div = React.createElement("div",null,[
+        React.createElement("div",null,[
+            React.createElement("h1",null,"React JS"),
+            React.createElement("p",null,"Learning React by Kabir Sir")
+        ]),
+        React.createElement("section",null,[
+            React.createElement("p",null,"Practising the React under the Section Html Tag")
+        ])
+      ])
+      ReactDOM.render(div,document.getElementById("root"))
+    </script>
+  </body>
+</html>

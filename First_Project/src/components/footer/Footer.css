@@ -1,0 +1,13 @@
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+footer a:hover {
+  color: limegreen;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      // 1 By Var
+      var button = <button>JSX Button</button>;
+      var h1 = <h1>React JS</h1>;
+      var p = <p>Learning React</p>;
+
+      // 2 Nested Div
+      var div = (
+        <div>
+          <h1>React JSX under div tag</h1>
+          <p>learning Dom by document and createElement , JSX</p>
+        </div>
+      );
+
+      // 3 By Function return Type
+      function createUI(title) {
+        var nestedEle = (
+          <div>
+            <h1>{title}</h1>
+          </div>
+        );
+        return nestedEle;
+      }
+
+      // 4 By calling Function
+      function app() {
+        return (
+          <div>
+            {createUI("React JS")}
+            {createUI("Angular")}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

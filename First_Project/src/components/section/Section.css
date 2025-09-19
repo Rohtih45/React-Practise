@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+  height: 85vh; /* Full screen height */
+  width: 100%;
+  background: url("https://img.freepik.com/free-photo/shopping-cart-full-products-inside-supermarket_123827-28166.jpg")
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+/* Bring content above overlay */
+.hero h1,
+.hero p,
+.hero button {
+  position: relative;
+  z-index: 1;
+}

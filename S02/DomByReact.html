@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button in React</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var button_react_element = React.createElement(
+        "button",
+        null,
+        "React Button"
+      );
+      var h1 = React.createElement(
+        "h1",
+        { id: "title" },
+        "Heading towards React"
+      );
+
+      var p = React.createElement("p", null, "Learning React by pracising");
+
+      ReactDOM.render([h1, p,button_react_element], document.getElementById("root"));
+
+      var subdiv = React.createElement("div",{id:"subcontainer"},[
+        React.createElement("h1",null,"React JS"),
+        React.createElement("p",null,"Learning React under SubContainer")
+      ]);
+
+      ReactDOM.render([subdiv], document.getElementById("root"));
+    </script>
+  </body>
+</html>

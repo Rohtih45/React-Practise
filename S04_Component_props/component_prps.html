@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Card(parameter) {
+        
+        var cardStyle = {
+          width: "270px",
+          padding: "10px",
+          boxShadow: "0 0 10px black",
+          textAlign: "center",
+          backgroundColor: "black",
+          color: "white",
+        };
+
+        return (
+          <div style={cardStyle}>
+            <img src={parameter.image} alt="" height="230" width="100%" />
+            <h3>{parameter.title}</h3>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+            <Card
+              title={"Akash"}
+              image={
+                "https://static.vecteezy.com/system/resources/previews/024/354/252/non_2x/businessman-isolated-illustration-ai-generative-free-photo.jpg"
+              }
+            />
+            <Card
+              title={"Akash"}
+              image={
+                "https://static.vecteezy.com/system/resources/previews/024/354/252/non_2x/businessman-isolated-illustration-ai-generative-free-photo.jpg"
+              }
+            />
+            <Card
+              title={"Akash"}
+              image={
+                "https://static.vecteezy.com/system/resources/previews/024/354/252/non_2x/businessman-isolated-illustration-ai-generative-free-photo.jpg"
+              }
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

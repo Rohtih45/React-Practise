@@ -1,0 +1,71 @@
+/* ----------------- Navbar ----------------- */
+.navbar {
+  position: fixed;              /* stays on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar .brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: limegreen;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: limegreen;
+}
+
+.navbar .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-icon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: red;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
+
+/* ----------------- Hero Section ----------------- */
