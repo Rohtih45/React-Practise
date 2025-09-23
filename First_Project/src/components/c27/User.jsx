@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { getUsers } from "./User.js";
+import "./User.css";
 
 function User() {
   var [user, setUser] = useState([]);
@@ -12,8 +13,8 @@ function User() {
     <div style={{ padding: 50 }}>
       <h2>Ramdom User Information</h2>
 
-      <section>
-        <table className="table table-striped table-bordered table-hover">
+      <section className="user-data">
+        <table width={"100%"} cellPadding={20}>
           <thead >
             <th>IMAGE</th>
             <th>NAME</th>

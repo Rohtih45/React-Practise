@@ -38,10 +38,10 @@ function ImageSlider() {
   return (
     <div
       style={{
-        width: "100%",
+        width: "80%",
         height: "100vh",
         backgroundImage: `url(${slides[current].image})`,
-        backgroundSize: "cover",
+        backgroundSize: "100% 100%",
         backgroundPosition: "center",
         display: "flex",
         alignItems: "center",

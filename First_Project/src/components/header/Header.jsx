@@ -3,9 +3,9 @@ import "./Header.css";
 function Header() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-        <a class="navbar-brand" href="#">
-          BrandName
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a className="navbar-brand" href="#">
+          Dude's Mart
         </a>
         <button
           class="navbar-toggler"

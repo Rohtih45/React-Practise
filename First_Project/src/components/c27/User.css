@@ -1,0 +1,9 @@
+.users-data {
+  width: 1100px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px green;
+}
+.users-data thead {
+  background-color: black;
+  color: lightgreen;
+}
