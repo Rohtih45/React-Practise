@@ -1,0 +1,35 @@
+.signin-form{
+    width:500px;
+    height:380px;
+    padding:30px;
+    border: 1px solid ;
+    border-radius:5px;
+    box-shadow: 0 0 10px black;
+    margin-bottom:30px
+}
+
+.login-btn{
+    width:100%
+}
+
+.forget {
+  text-decoration: none !important;
+  font-size: 1em;
+  color: blue;
+  text-align: center !important;
+}
+
+.signup{
+    height:90px;
+    width:500px;
+    padding:30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    text-align:center;
+}
+
+.signup p{
+    font-size:1rem;
+    color:black;
+}

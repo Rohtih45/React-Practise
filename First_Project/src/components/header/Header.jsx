@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
+import localContext from "../container/localcontext";
 
 function Header() {
+  const [isLogin, setLogin, setLogout] = useContext(localContext);
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
@@ -8,41 +13,53 @@ function Header() {
           Dude's Mart
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mx-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Shop
-              </a>
+            <li className="nav-item">
+              <Link className="nav-link" to="/products">
+                Products
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <Link className="nav-link" to="/profile">
                 Profile
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <Link className="nav-link" to="/contactus">
                 ContactUs
-              </a>
+              </Link>
             </li>
           </ul>
-          <div class="d-flex align-items-center gap-3">
-            <a href="#">
-              <i class="fas fa-shopping-bag text-white fs-5"></i>
-            </a>
-            <button class="btn btn-danger">Logout</button>
+          <div className="d-flex align-items-center ">
+            <Link to="/cart-details">
+              <button className="btn btn-dark">
+                <i className="fas fa-shopping-bag"></i> Cart
+              </button>
+            </Link>
+            <Link to="/">
+              <button
+                onClick={() => {
+                  // props.setIslogin(false);
+                  setLogout();
+                }}
+                className="btn btn-danger"
+              >
+                Logout
+              </button>
+            </Link>
           </div>
         </div>
       </nav>

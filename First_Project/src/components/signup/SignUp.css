@@ -1,0 +1,17 @@
+.signup-form {
+  width: 500px;
+  height: 540px;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+.sign-btn {
+  width: 100%;
+}
+
+.signuppage {
+  margin-top: 15px;
+  color:black;
+}
